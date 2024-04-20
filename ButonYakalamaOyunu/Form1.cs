@@ -6,14 +6,14 @@ namespace ButonYakalamaOyunu
         public Form1()
         {
             InitializeComponent();
-            // Form yüklendiðinde butonu rastgele bir konuma yerleþtir
+            // Form yÃ¼klendiginde butonu rastgele bir konuma yerlestir
             RandomlyPlaceButton();
         }
 
         public int i = 1;
         private Random rnd = new Random();
 
-        // Butonu rastgele bir konuma yerleþtiren metod
+        // Butonu rastgele bir konuma yerlestiren metod
         private void RandomlyPlaceButton()
         {
             button1.Left = rnd.Next(0, this.ClientSize.Width - button1.Width);
@@ -22,7 +22,7 @@ namespace ButonYakalamaOyunu
 
         private void button1_Click(object sender, EventArgs e)
         {
-            label1.Text = ("Tebrikler Toplam Puanýnýz = " + " " + Convert.ToString(i) + " " + ".");
+            label1.Text = ("Tebrikler Toplam PuanÃ½nÃ½z = " + " " + Convert.ToString(i) + " " + ".");
             if (i <= 20)
             {
                 i++;
@@ -35,7 +35,7 @@ namespace ButonYakalamaOyunu
 
         private void button1_MouseMove(object sender, MouseEventArgs e)
         {
-            // Butonun farklý bir noktaya ýþýnlanmasýný saðla
+            // Butonun farklÄ± bir noktaya gitmesini saÄŸla
             RandomlyPlaceButton();
         }
 
